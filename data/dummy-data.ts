@@ -1,0 +1,179 @@
+import type { Job, Applicant } from "@/types"
+
+export const dummyJobs: Job[] = [
+  {
+    id: "1",
+    title: "Senior Frontend Developer",
+    company: "TechCorp Inc.",
+    location: "San Francisco, CA",
+    type: "Full-time",
+    salary: "$120,000 - $150,000",
+    postedDate: "2024-01-15",
+    description:
+      "We are looking for a Senior Frontend Developer to join our dynamic team. You will be responsible for developing user-facing web applications using modern JavaScript frameworks.",
+    requirements: [
+      "5+ years of experience in frontend development",
+      "Proficiency in React, TypeScript, and Next.js",
+      "Experience with state management libraries",
+      "Strong understanding of responsive design",
+      "Experience with testing frameworks",
+    ],
+    benefits: [
+      "Health, dental, and vision insurance",
+      "Flexible working hours",
+      "Remote work options",
+      "Professional development budget",
+      "401(k) matching",
+    ],
+  },
+  {
+    id: "2",
+    title: "UX/UI Designer",
+    company: "Design Studio",
+    location: "New York, NY",
+    type: "Full-time",
+    salary: "$90,000 - $110,000",
+    postedDate: "2024-01-12",
+    description:
+      "Join our creative team as a UX/UI Designer. You will work on designing intuitive and beautiful user experiences for web and mobile applications.",
+    requirements: [
+      "3+ years of UX/UI design experience",
+      "Proficiency in Figma, Sketch, or Adobe XD",
+      "Strong portfolio showcasing design process",
+      "Understanding of user-centered design principles",
+      "Experience with prototyping tools",
+    ],
+    benefits: [
+      "Creative and collaborative work environment",
+      "Latest design tools and software",
+      "Flexible PTO policy",
+      "Health insurance",
+      "Team building activities",
+    ],
+  },
+  {
+    id: "3",
+    title: "Backend Developer",
+    company: "DataFlow Solutions",
+    location: "Austin, TX",
+    type: "Remote",
+    salary: "$100,000 - $130,000",
+    postedDate: "2024-01-10",
+    description:
+      "We are seeking a skilled Backend Developer to build and maintain server-side applications. You will work with databases, APIs, and cloud services.",
+    requirements: [
+      "4+ years of backend development experience",
+      "Proficiency in Node.js, Python, or Java",
+      "Experience with databases (SQL and NoSQL)",
+      "Knowledge of cloud platforms (AWS, GCP, Azure)",
+      "Understanding of microservices architecture",
+    ],
+    benefits: [
+      "Fully remote position",
+      "Competitive salary and equity",
+      "Health and wellness stipend",
+      "Learning and development budget",
+      "Flexible working hours",
+    ],
+  },
+  {
+    id: "4",
+    title: "Product Manager",
+    company: "InnovateTech",
+    location: "Seattle, WA",
+    type: "Full-time",
+    salary: "$130,000 - $160,000",
+    postedDate: "2024-01-08",
+    description:
+      "Lead product strategy and development as our Product Manager. You will work cross-functionally to deliver exceptional products that meet user needs.",
+    requirements: [
+      "5+ years of product management experience",
+      "Strong analytical and problem-solving skills",
+      "Experience with agile development methodologies",
+      "Excellent communication and leadership skills",
+      "Technical background preferred",
+    ],
+    benefits: [
+      "Stock options",
+      "Comprehensive health benefits",
+      "Unlimited PTO",
+      "Professional development opportunities",
+      "Modern office with great amenities",
+    ],
+  },
+]
+
+export const dummyApplicants: Record<string, Applicant[]> = {
+  "1": [
+    {
+      id: "1",
+      name: "John Smith",
+      email: "john.smith@email.com",
+      phone: "+1 (555) 123-4567",
+      appliedDate: "2024-01-16",
+      status: "Under Review",
+    },
+    {
+      id: "2",
+      name: "Sarah Johnson",
+      email: "sarah.johnson@email.com",
+      phone: "+1 (555) 987-6543",
+      appliedDate: "2024-01-17",
+      status: "Applied",
+    },
+    {
+      id: "3",
+      name: "Mike Davis",
+      email: "mike.davis@email.com",
+      phone: "+1 (555) 456-7890",
+      appliedDate: "2024-01-18",
+      status: "Interview",
+    },
+  ],
+  "2": [
+    {
+      id: "4",
+      name: "Emily Chen",
+      email: "emily.chen@email.com",
+      phone: "+1 (555) 234-5678",
+      appliedDate: "2024-01-13",
+      status: "Applied",
+    },
+    {
+      id: "5",
+      name: "David Wilson",
+      email: "david.wilson@email.com",
+      phone: "+1 (555) 345-6789",
+      appliedDate: "2024-01-14",
+      status: "Under Review",
+    },
+  ],
+  "3": [
+    {
+      id: "6",
+      name: "Lisa Anderson",
+      email: "lisa.anderson@email.com",
+      phone: "+1 (555) 567-8901",
+      appliedDate: "2024-01-11",
+      status: "Applied",
+    },
+  ],
+  "4": [
+    {
+      id: "7",
+      name: "Robert Brown",
+      email: "robert.brown@email.com",
+      phone: "+1 (555) 678-9012",
+      appliedDate: "2024-01-09",
+      status: "Interview",
+    },
+    {
+      id: "8",
+      name: "Jennifer Taylor",
+      email: "jennifer.taylor@email.com",
+      phone: "+1 (555) 789-0123",
+      appliedDate: "2024-01-10",
+      status: "Under Review",
+    },
+  ],
+}
