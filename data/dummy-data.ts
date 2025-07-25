@@ -25,6 +25,7 @@ export const dummyJobs: Job[] = [
       "Professional development budget",
       "401(k) matching",
     ],
+    applicants: [],
   },
   {
     id: "2",
@@ -50,6 +51,7 @@ export const dummyJobs: Job[] = [
       "Health insurance",
       "Team building activities",
     ],
+    applicants: [],
   },
   {
     id: "3",
@@ -75,6 +77,7 @@ export const dummyJobs: Job[] = [
       "Learning and development budget",
       "Flexible working hours",
     ],
+    applicants: [],
   },
   {
     id: "4",
@@ -100,6 +103,7 @@ export const dummyJobs: Job[] = [
       "Professional development opportunities",
       "Modern office with great amenities",
     ],
+    applicants: [],
   },
 ]
 
