@@ -1,10 +1,11 @@
 // components/job-listings-table.tsx
 import {
-  Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Box, Button, Menu, MenuItem, IconButton, TextField, Select, FormControl, InputLabel, Pagination
+  Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Box, Button, Menu, MenuItem, IconButton, TextField, Select, FormControl, InputLabel, Pagination, Chip
 } from "@mui/material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { useState } from "react";
 import { dummyJobs } from "@/data/dummy-data";
+import Link from "next/link";
 
 const jobTypes = ["All", "Freelance", "Extra Job", "Part time"];
 
@@ -68,11 +69,17 @@ export function JobListingsTable() {
           <TableBody>
             {paginatedJobs.map(job => (
               <TableRow key={job.id}>
-                <TableCell>{job.title}</TableCell>
+                <TableCell>
+                  <Link href={`/recruiter/jobs/${job.id}`} style={{ textDecoration: "none" }}>
+                    <span style={{ color: '#1976d2', cursor: 'pointer', fontWeight: 500 }}>
+                      {job.title}
+                    </span>
+                  </Link>
+                </TableCell>
                 <TableCell>{job.type}</TableCell>
                 <TableCell>{job.postedDate}</TableCell>
-                <TableCell>{job.applicants || 0}</TableCell>
-                <TableCell>{job.views || 0}</TableCell>
+                <TableCell>{(job as any).applicants ?? 0}</TableCell>
+                <TableCell>{(job as any).views ?? 0}</TableCell>
                 <TableCell align="right">
                   <IconButton onClick={e => handleMenuOpen(e, job.id)}>
                     <MoreVertIcon />

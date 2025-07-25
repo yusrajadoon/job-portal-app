@@ -28,3 +28,45 @@ export interface User {
   email: string
   role: UserRole
 }
+export interface User {
+  id: string
+  name: string
+  email: string
+  role: "recruiter" | "candidate"
+  avatar?: string
+}
+
+export interface Candidate {
+  id: string
+  name: string
+  email: string
+  role: string
+  location: string
+  skills: string[]
+  status: "Hired" | "In review" | "Interview" | "Applied" | "Rejected"
+  matchLevel: number
+  avatar?: string
+  appliedDate: string
+}
+
+export interface Job {
+  id: string
+  title: string
+  company: string
+  location: string
+  postedDate: string
+  salary: string
+  description: string
+  applicants: Candidate[]
+}
+
+export interface JobStats {
+  applications: number
+  averageMatch: number
+  hired: number
+  rejected: number
+  applicationsChange: string
+  averageMatchChange: string
+  hiredChange: string
+  rejectedChange: string
+}

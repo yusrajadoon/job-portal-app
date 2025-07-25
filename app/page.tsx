@@ -2,7 +2,8 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import { Container, Paper, Typography, Button, Box, Card, CardContent, Grid } from "@mui/material"
+import { Container, Paper, Typography, Button, Box, Card, CardContent } from "@mui/material"
+import Grid from "@mui/material/Grid"
 import { Work, Person } from "@mui/icons-material"
 import type { UserRole } from "@/types"
 
@@ -84,7 +85,7 @@ export default function LoginPage() {
               <CardContent sx={{ textAlign: "center", py: 4 }}>
                 <Person sx={{ fontSize: 48, color: "primary.main", mb: 2 }} />
                 <Typography variant="h3" component="h3" gutterBottom>
-                  Job Seeker
+                  User
                 </Typography>
                 <Typography variant="body1" color="text.secondary">
                   Find and apply for jobs
