@@ -209,9 +209,9 @@ export default function JobDetailPage() {
             </div>
 
             <Button
-              variant="outline"
+              variant="outlined"
               className="w-full bg-transparent"
-              size="sm"
+              size="small"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -335,7 +335,7 @@ export default function JobDetailPage() {
             </div>
           </div>
 
-          <Button variant="outline" className="w-full bg-transparent">
+          <Button variant="outlined" className="w-full bg-transparent">
             View Saved Jobs
           </Button>
         </div>
