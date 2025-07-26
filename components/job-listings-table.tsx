@@ -1,3 +1,4 @@
+"use client"
 // components/job-listings-table.tsx
 import {
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Box, Button, Menu, MenuItem, IconButton, TextField, Select, FormControl, InputLabel, Pagination, Chip
